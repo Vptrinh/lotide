@@ -15,8 +15,6 @@ const eqArrays = function(array1, array2) {
       result.push(array1[i]);
     }
   }
-  console.log("result:", result);
-  console.log("result:", array1);
   return result.length === array1.length;
 };
 
