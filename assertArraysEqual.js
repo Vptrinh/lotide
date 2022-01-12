@@ -8,9 +8,7 @@ const eqArrays = function(array1, array2) {
       result.push(array1[i]);
     }
   }
-  if (result.length === array1.length) return true;
-
-  return false;
+  return result.length === array1.length;
 };
 
 const assertArraysEqual = function(actual, expected) {
