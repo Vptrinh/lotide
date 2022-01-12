@@ -21,8 +21,8 @@ const middle = function(array) {
   let result = [];
   let middleIndex = "";
   let secondMiddle = "";
-  if (array.length <= 1) {
-    return result = []; // return an empty array for arrays with one or two elements as there is no middle
+  if (array.length < 3) {
+    return result; // return an empty array for arrays with one or two elements as there is no middle
   } else if (array.length % 2 === 0) {
     middleIndex = array.length / 2;
     secondMiddle = array.length / 2 + 1;
