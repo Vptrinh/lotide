@@ -3,9 +3,11 @@ const eqObjects = function(object1, object2) {
     return false;
   } else {
     for (let someKeys in object1) {
-      if (object1[someKeys] !== object2[someKeys]) return false;
+      if (object1[someKeys] !== object2[someKeys]) {
+        if (!eqArrays(object1[someKeys], object2[someKeys])) return false;
+        }
+      }
     }
-  }
   return true;
 };
 
