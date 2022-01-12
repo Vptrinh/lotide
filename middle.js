@@ -24,7 +24,7 @@ const middle = function(array) {
   if (array.length <= 1) {
     return result = []; // return an empty array for arrays with one or two elements as there is no middle
   } else if (array.length % 2 === 0) {
-    middleIndex = array.length / 2; 
+    middleIndex = array.length / 2;
     secondMiddle = array.length / 2 + 1;
     result.push(middleIndex);
     result.push(secondMiddle);
@@ -36,9 +36,10 @@ const middle = function(array) {
   return result;
 };
 
-middle([1]) // => []
-middle([1, 2]) // => []
-middle([1, 2, 3]) // => [2]
-middle([1, 2, 3, 4, 5]) // => [3]
-middle([1, 2, 3, 4]) // => [2, 3]
-middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
+//TEST CODE
+middle([1]); // => []
+middle([1, 2]); // => []
+middle([1, 2, 3]); // => [2]
+middle([1, 2, 3, 4, 5]); // => [3]
+middle([1, 2, 3, 4]); // => [2, 3]
+middle([1, 2, 3, 4, 5, 6]); // => [3, 4]
