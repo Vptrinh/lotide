@@ -1,9 +1,9 @@
 // test/assertEqualTest.js
-const assertEqual = require ('./assertEqual');
+// const assertEqual = require ('./assertEqual');
 
 //TEST CODE
-assertEqual("Lighthouse Labs","Bootcamp");
-assertEqual(1,1);
+// assertEqual("Lighthouse Labs","Bootcamp");
+// assertEqual(1,1);
 
 //FUNCTION TO RETURN THE LAST ITEM OF AN ARRAY
 
@@ -15,3 +15,5 @@ const tail = function(array) {
   return newTail;
 };
 
+console.log(tail(["light", "labs"]));
+module.exports = tail;
