@@ -1,11 +1,11 @@
-//FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`${actual} === ${expected}`);
-  } else {
-    console.log(`${actual} !== ${expected}`);
-  }
-};
+// //FUNCTION IMPLEMENTATION
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(`${actual} === ${expected}`);
+//   } else {
+//     console.log(`${actual} !== ${expected}`);
+//   }
+// };
 
 const findKeyByValue = function(allObject, givenValue) {
   //Scan the Object
@@ -18,15 +18,16 @@ const findKeyByValue = function(allObject, givenValue) {
   return undefined;
 };
 
+module.export = findKeyByValue;
 
-const bestTVShowsByGenre = {
-  sciFi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire"
-};
+// const bestTVShowsByGenre = {
+//   sciFi: "The Expanse",
+//   comedy: "Brooklyn Nine-Nine",
+//   drama:  "The Wire"
+// };
 
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
 
-console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));
-console.log(findKeyByValue(bestTVShowsByGenre, "That '70s Show"));
+// console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));
+// console.log(findKeyByValue(bestTVShowsByGenre, "That '70s Show"));

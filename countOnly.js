@@ -1,11 +1,11 @@
 //assertEqual function
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`${actual} === ${expected}`);
-  } else {
-    console.log(`${actual} !== ${expected}`);
-  }
-};
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(`${actual} === ${expected}`);
+//   } else {
+//     console.log(`${actual} !== ${expected}`);
+//   }
+// };
 
 
 // FUNCTION IMPLEMENTATION
@@ -24,19 +24,19 @@ const countOnly = function(allItems, itemsToCount) {
   return results;
 };
     
-  
+module.exports = countOnly;
 
 
-const firstNames = [
-  "Karl",
-  "Salima",
-  "Agouhanna",
-  "Fang",
-  "Kavith",
-  "Jason",
-  "Salima",
-  "Fang",
-  "Joe"
-];
+// const firstNames = [
+//   "Karl",
+//   "Salima",
+//   "Agouhanna",
+//   "Fang",
+//   "Kavith",
+//   "Jason",
+//   "Salima",
+//   "Fang",
+//   "Joe"
+// ];
 
-const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
+// const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });

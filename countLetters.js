@@ -1,10 +1,10 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`${actual} === ${expected}`);
-  } else {
-    console.log(`${actual} !== ${expected}`);
-  }
-};
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(`${actual} === ${expected}`);
+//   } else {
+//     console.log(`${actual} !== ${expected}`);
+//   }
+// };
 
 //FUNCTION IMPLEMENTATION
 
@@ -20,5 +20,7 @@ const countLetters = function(string) {
   return result;
 };
 
-// TEST CODE
-console.log(countLetters("This is a dog."));
+module.exports = countLetters;
+
+// // TEST CODE
+// console.log(countLetters("This is a dog."));

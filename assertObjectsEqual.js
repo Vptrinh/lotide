@@ -1,26 +1,6 @@
-const eqArrays = function(array1, array2) {
-  if (array1.length !== array2.length) return false;
-  let result = [];
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] === array2[i]) {
-      result.push(array1[i]);
-    }
-  }
-  return result.length === array1.length;
-};
+//const eqArrays = require ('../eqArrays');
 
-const eqObjects = function(object1, object2) {
-  if (Object.keys(object1).length !== Object.keys(object2).length) {
-    return false;
-  } else {
-    for (let someKeys in object1) {
-      if (object1[someKeys] !== object2[someKeys]) {
-        if (!eqArrays(object1[someKeys], object2[someKeys])) return false;
-        }
-      }
-    }
-  return true;
-};
+const eqObjects = require ('./eqObjects');
 
 const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect;
@@ -31,22 +11,23 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 
-//TEST CODES
-const ab = {
-  a: 1,
-  b: 2,
-};
+module.exports = assertObjectsEqual;
+// //TEST CODES
+// const ab = {
+//   a: 1,
+//   b: 2,
+// };
 
-const ba = {
-  b:2,
-  a:1,
-};
+// const ba = {
+//   b:2,
+//   a:1,
+// };
 
-const acb = {
-  a:1,
-  c:3,
-  b:2,
-};
+// const acb = {
+//   a:1,
+//   c:3,
+//   b:2,
+// };
 
-assertObjectsEqual(ab,ba);
-assertObjectsEqual(ab,acb);
+// assertObjectsEqual(ab,ba);
+// assertObjectsEqual(ab,acb);

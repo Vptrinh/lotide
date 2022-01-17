@@ -15,5 +15,4 @@ const tail = function(array) {
   return newTail;
 };
 
-console.log(tail(["light", "labs"]));
 module.exports = tail;
